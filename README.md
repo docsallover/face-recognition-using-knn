@@ -25,13 +25,14 @@ To use the system, follow these steps:
    - Run `add-new-face.py`:
    - Locate the script named `add-new-face.py`. Execute this script to launch the program. It will typically activate your computer's camera.
 6. Face Detection and Naming:
-   - Face the camera so that your face is centered within the frame. The script should detect your face.
    - When prompted, enter a name for the person whose face is being detected. This name will be associated with the captured face image for future recognition.
-7. Face Recognition
+   - Face the camera so that your face is centered within the frame. The script should detect your face.
+   
+8. Face Recognition
    - Run `face-recognition.py`:
    - Locate the script responsible for face recognition, likely named `face-recognition.py`. Execute this script to start the program. It will typically activate your computer's camera.
 
-8. Real-Time Recognition:
+9. Real-Time Recognition:
    - Face the camera again. The script should detect faces in the camera view. If a recognized face is detected, the script should display the corresponding name associated with that face.
 
 ## Dependencies
