@@ -16,29 +16,6 @@ print('Shape of Faces matrix --> ', faces.shape)
 knn = KNeighborsClassifier(n_neighbors=5)
 knn.fit(faces,labels)
 
-# Define KNN functions
-
-
-# def distance(x1, x2):
-#     d = np.sqrt(((x1 - x2) ** 2).sum())
-#     return d
-
-
-# def knn(xt, X_train=faces, y_train=labels, k=5):
-#     vals = []
-
-#     for ix in range(len(labels)):
-#         d = distance(X_train[ix], xt)
-#         vals.append([d, y_train[ix]])
-
-#     sorted_labels = sorted(vals, key=lambda z: z[0])
-#     neighbours = np.asarray(sorted_labels)[:k, -1]
-
-#     freq = np.unique(neighbours, return_counts=True)
-
-#     # freq[0] is list of names and freq[1] is list of counts
-#     return freq[0][freq[1].argmax()]
-
 cam = cv2.VideoCapture(0)
 
 while True:
